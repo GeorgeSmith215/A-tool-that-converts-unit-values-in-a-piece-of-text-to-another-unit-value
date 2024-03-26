@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A-tool-that-converts-unit-values-in-a-piece-of-text-to-another-unit-value
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h2>单位值转换</h2>
+        <textarea id="inputText" rows="15" cols="50"></textarea><br><br>
+        原单位：
+        <select id="fromUnit">
+        <option value="in">英寸</option>
+        <option value="cm">厘米</option>
+        </select>
+        &nbsp;
+        转换单位：
+        <select id="toUnit">
+        <option value="in">英寸</option>
+        <option value="cm">厘米</option>
+        </select><br><br>
+        <button onclick="highlightMatches()">高亮匹配</button>
+        <button onclick="convertUnits()">转换</button><br><br>
+        <textarea id="outputText" rows="15" cols="50" readonly></textarea>
+        
+        <script src="./index.js" async defer></script>
+    </body>
+</html>
