@@ -26,7 +26,15 @@
         <select id="toUnit">
         <option value="in">英寸</option>
         <option value="cm">厘米</option>
-        </select><br><br>
+        </select>
+        &nbsp;
+        <!-- 小数：
+        <select id="fraction">
+        <option value="fix">四舍五入</option>
+        <option value="ceiling ">上取整</option>
+        <option value="floor">下取整</option>
+        </select> -->
+        <br><br>
         <button onclick="highlightMatches()">高亮匹配</button>
         <button onclick="convertUnits()">转换</button><br><br>
         <textarea id="outputText" rows="15" cols="50" readonly></textarea>

@@ -44,7 +44,7 @@ function convertUnits() {
             convertedValue = value;
         }
         // 返回转换后的值
-        return convertedValue.toFixed(2) + `${p3 ? p3 : ''}` + getSelectedOption();
+        return convertedValue.toFixed(0) + `${p3 ? p3 : ''}` + getSelectedOption();
     });
     
     // 显示转换结果
